@@ -15,7 +15,6 @@ h1, h2, h3 {
     line-height: 1.1;
 }
 
-
 header {
     width: 270px;
     float: left;
@@ -34,6 +33,29 @@ footer {
     position: fixed;
     bottom: 50px;
     font-size: 16px;
+}
+
+ul {
+    list-style-type: none;    
+    margin: 0;
+    padding: 0;
+}
+
+ul.navbar {
+    background-color: #ddd;
+    width: 200px;
+}
+
+li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #444
+}
+
+li a:hover {
+    background-color: #808080;
+    color: #eee;
 }
 
 @media print,
