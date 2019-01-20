@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>William Hirsch</h1>
+        {% include navigation.html %}
+    </header>
+
+    <content>
+        {{ content }}
+    </content>
+
+    <footer>
+        Made by William Hirsch
+    </footer>
+</body>
+</html>
