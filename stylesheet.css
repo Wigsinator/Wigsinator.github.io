@@ -114,11 +114,11 @@ screen and (max-width: 1080px) {
     
     nav ul li {
         float: left;
-        padding: 15px;
     }
     
     nav ul li a {
         border-bottom: none;
+        padding: 23px 31px;
     }
 }
 
