@@ -1,5 +1,4 @@
 ---
-layout: post
 title: My Introduction
 ---
 Hello everyone! My name is William Hirsch, and I’m currently a computer science student studying at the University of Toronto Mississauga. I come from Quebec, which has a different school system from the rest of Canada. In Quebec, you go to elementary school from grades 1-6, then go to high school from grades 7-11. After that, you go to a cross of high school and university called CEGEP for two years. Because of this, I’m in a weird position where I got some first year classes credited, enough that I’m considered a second year student, but I still had to take a number of first year courses last semester.

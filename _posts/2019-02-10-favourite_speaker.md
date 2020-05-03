@@ -1,5 +1,4 @@
 ---
-layout: post
 title: My Favourite Speaker
 ---
 While I don’t listen to very many public speakers, one who continues to impress me every time I hear him speak is President Obama. His style of oration is very clear, and he always walks up to the podium knowing exactly what he wants to say. He’s incredibly convincing, while never feeling condescending. It’s a very professorial tone, one that exudes confidence and respects the listener. All of that comes together into speeches that are incredibly satisfying to listen to.
