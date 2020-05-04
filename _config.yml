@@ -13,3 +13,8 @@ defaults:
       type: "posts" 
     values:
       layout: "post"
+
+collections:
+  projects:
+    order:
+      - pocket_chef.md

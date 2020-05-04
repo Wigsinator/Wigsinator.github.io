@@ -1,0 +1,13 @@
+---
+title: Projects
+---
+<h2>My Projects</h2>
+
+<p>Here is a list of many projects I've worked on, with descriptions and links to each repository.</p>
+
+	{% for project in site.projects %}
+		<ul><li>
+			<h2 style="margin-bottom:unset;"><a href="{{ project.link }}">{{ project.name }}</a></h2>
+			{{ project.content | markdownify }}
+		</li></ul>
+	{% endfor %}
