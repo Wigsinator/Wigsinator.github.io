@@ -1,6 +1,42 @@
 ---
 title: Projects
 ---
+<style type="text/css">
+	li p {
+		margin-top: 0;
+		padding: 0 16px;
+	}
+	.container {
+		position: relative;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+
+	img {
+		margin: auto;
+		padding: 0 16px 1em;
+		display: block;
+		max-width: 50%;
+		height: auto;
+	}
+
+	.overlay {
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background-color: #808080;
+	  color: #eee;
+	  width: 100%;
+	  height: 0;
+	  opacity: 95%;
+	  transition: .5s ease;
+	}
+	.container:hover .overlay {
+	  height: 100%;
+	}
+</style>
 <h2>My Projects</h2>
 
 <p>Here is a list of many projects I've worked on, with descriptions and links to each repository.</p>
@@ -8,6 +44,15 @@ title: Projects
 	{% for project in site.projects %}
 		<ul><li>
 			<h2 style="margin-bottom:unset;"><a href="{{ project.link }}">{{ project.name }}</a></h2>
-			{{ project.content | markdownify }}
+			<div class="container">
+			{% if project.img %}
+					<img src="{{ project.img }}">
+					<div class="overlay">
+						{{ project.content | markdownify }}
+					</div>
+			{% else %}
+				{{ project.content | markdownify }}
+			{% endif %}
+			</div>
 		</li></ul>
 	{% endfor %}
