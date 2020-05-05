@@ -2,7 +2,7 @@ html {}
 
 body {
     background-color: #EEE;
-    width: 860px;
+    width: 1080px;
     margin: 40px auto;
     line-height: 1.6;
     font-size: 18px;
@@ -22,7 +22,7 @@ header {
 }
 
 content {
-    width: 500px;
+    width: 800px;
     float: right;
     padding-bottom: 50px;
 }
@@ -68,7 +68,7 @@ li a:hover {
     display: none;
     width: 40px;
     height: 40px;
-    background: #808080 url(./img/menu-icon.png) center;
+    background: #808080 url(./assets/img/menu-icon.png) center;
 }
 
 a:hover#menu-icon {
@@ -80,6 +80,7 @@ a:hover#menu-icon {
 screen and (max-width: 1080px) {
     body{
         padding: 15px;
+        width: 900px;
     }
     
     header,
