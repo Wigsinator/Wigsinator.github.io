@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+{% if page.img %}
+<img style="display: block; max-height: 200px; margin: auto;" src="{{ page.img }}">
+{% endif %}
+
+{{ content | split: '<!--more-->' | last }}
+
+<a href="{{ page.link }}">
+	<button>
+		<p>Github Source</p>
+	</button>
+</a>

@@ -1,4 +1,5 @@
 permalink: pretty
+excerpt_separator: <!--more-->
 
 defaults:
   -
@@ -13,8 +14,15 @@ defaults:
       type: "posts" 
     values:
       layout: "post"
+  - 
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
 
 collections:
   projects:
+    output: true
     order:
       - pocket_chef.md

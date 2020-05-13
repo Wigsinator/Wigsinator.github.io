@@ -43,15 +43,15 @@ title: Projects
 
 	{% for project in site.projects %}
 		<ul><li>
-			<h2 style="margin-bottom:unset;"><a href="{{ project.link }}">{{ project.name }}</a></h2>
+			<h2 style="margin-bottom:unset;"><a href="{{ project.url }}">{{ project.title }}</a></h2>
 			<div class="container">
 			{% if project.img %}
 					<img src="{{ project.img }}">
 					<div class="overlay">
-						{{ project.content | markdownify }}
+						{{ project.excerpt | markdownify }}
 					</div>
 			{% else %}
-				{{ project.content | markdownify }}
+				{{ project.excerpt | markdownify }}
 			{% endif %}
 			</div>
 		</li></ul>

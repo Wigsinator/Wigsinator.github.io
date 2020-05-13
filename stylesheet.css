@@ -76,6 +76,23 @@ a:hover#menu-icon {
     border-radius: 4px 4px 0 0;
 }
 
+button {
+    background-color: #ddd;
+    color: #444;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #808080;
+    color: #eee;
+}
+
 @media print,
 screen and (max-width: 1080px) {
     body{
