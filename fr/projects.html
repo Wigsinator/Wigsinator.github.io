@@ -1,0 +1,58 @@
+---
+title: Projets
+---
+<style type="text/css">
+	li p {
+		margin-top: 0;
+		padding: 0 16px;
+	}
+	.container {
+		position: relative;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+
+	img {
+		margin: auto;
+		padding: 0 16px 1em;
+		display: block;
+		max-width: 50%;
+		height: auto;
+	}
+
+	.overlay {
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background-color: #808080;
+	  color: #eee;
+	  width: 100%;
+	  height: 0;
+	  opacity: 95%;
+	  transition: .5s ease;
+	}
+	.container:hover .overlay {
+	  height: 100%;
+	}
+</style>
+<h2>Mes Projets</h2>
+
+<p>Voici une liste des projets sur laquelle j'ai travaillé. Mes écritures sur chaque projet est, des maintenant, completement en anglais, la traduction vas venir dans le futur.</p>
+
+	{% for project in site.projects %}
+		<ul><li>
+			<h2 style="margin-bottom:unset;"><a href="{{ project.url }}">{{ project.title }}</a></h2>
+			<div class="container">
+			{% if project.img %}
+					<img src="{{ project.img }}">
+					<div class="overlay">
+						{{ project.excerpt | markdownify }}
+					</div>
+			{% else %}
+				{{ project.excerpt | markdownify }}
+			{% endif %}
+			</div>
+		</li></ul>
+	{% endfor %}

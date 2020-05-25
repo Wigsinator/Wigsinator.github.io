@@ -1,0 +1,9 @@
+<nav>
+    <a href="#" id="menu-icon"></a>
+    <ul>
+    	{% for item in site.data.navigation %}
+        <li><a href="/en{{ item.link }}">{{ item.name }}</a></li>
+        {% endfor %}
+        <li><a href="/fr/">Français</a></li>
+    </ul>
+</nav>

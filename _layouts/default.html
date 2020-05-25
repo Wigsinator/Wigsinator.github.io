@@ -16,15 +16,15 @@
     <script type="text/javascript" src="https://cdn.userway.org/widget.js"></script>
     <header>
         <h1>William Hirsch</h1>
-        {% include navigation.html %}
+        {% if page.lang == 'en' %}
+            {% include navigation_en.html %}
+        {% elsif page.lang == 'fr' %}
+            {% include navigation_fr.html %}
+        {% endif %}
     </header>
 
     <content>
         {{ content }}
     </content>
-
-    <footer>
-        Made by William Hirsch
-    </footer>
 </body>
 </html>

@@ -8,18 +8,33 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+
+  -
+    scope:
+      path: "en"
+      type: "pages"
+    values:
+      lang: "en"
+  -
+    scope:
+      path: "fr"
+      type: "pages"
+    values:
+      lang: "fr"
   -
     scope:
       path: ""
       type: "posts" 
     values:
       layout: "post"
+      lang: "en"
   - 
     scope:
       path: ""
       type: "projects"
     values:
       layout: "project"
+      lang: "en"
 
 collections:
   projects:

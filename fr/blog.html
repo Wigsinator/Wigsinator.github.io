@@ -1,0 +1,14 @@
+---
+title: Blog
+---
+<h2>Articles de blog pour CSC290</h2>
+
+<p>Une partie de la classe CSC290: Communication pour les informaticiens était qu'on devait maintenir un blog. Les articles sont gardés ici, mais ils sont tous en anglais, et je n'écrit pas de nouveaux articles.</p>
+
+<ul>
+	{% for post in site.posts %}
+		<li>
+			<a href="{{ post.url }}">{{ post.title }} - {{ post.date | date_to_string }}</a>
+		</li>
+	{% endfor %}
+</ul>
