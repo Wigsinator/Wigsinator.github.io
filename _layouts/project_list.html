@@ -1,0 +1,25 @@
+---
+layout: default
+style: projects
+---
+    {{content}}
+
+    <div class="cards">
+        {% for project in site.projects %}
+		<div class="card">
+			<a class="text-link" href="{{ project.url }}">
+				<h4>{{ project.title }}</h4>
+				<div class="container">
+					{% if project.img %}
+						<img src="{{ project.img }}">
+						<div class="overlay">
+							{{ project.excerpt | markdownify }}
+						</div>
+					{% else %}
+						{{ project.excerpt | markdownify }}
+					{% endif %}
+				</div>
+			</a>
+		</div>
+	{% endfor %}
+    </div>

@@ -1,5 +1,6 @@
 ---
 title: Binary Search Trees
+category: csc290
 ---
 Binary search trees are an incredibly useful and important tool for any computer scientist to know, as they allow us to store data such that it can be quickly found.
 

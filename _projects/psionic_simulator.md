@@ -3,7 +3,7 @@ title: Psionic Simulator
 link: https://github.com/Wigsinator/PsionicSimulator
 img: /assets/img/d20.png
 ---
-A simulator that counts the number of dice rolls when a particular roll changes the size of the next die roll.
+Counts the number of dice rolled when one roll changes the size of the next die.
 
 <!--more-->
 

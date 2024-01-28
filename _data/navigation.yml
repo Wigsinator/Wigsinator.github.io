@@ -1,12 +1,12 @@
 - name: Home
   name_fr: Acceuil
-  link: /
+  url: /
 - name: Projects
   name_fr: Projets
-  link: /projects
+  url: /projects
 - name: Blog
   name_fr: Blog
-  link: /blog
+  url: /blog
 - name: Contact
   name_fr: Contact
-  link: /contact
+  url: /contact

@@ -1,5 +1,6 @@
 ---
 title: The DemocracyBot Project
+category: csc290
 ---
 My favorite project I ever got to work on was when three of my friends and I decided to do a hackathon just for kicks to see what we’d come up with, and we ended up creating the concept for DemocracyBot. It was a Facebook Messenger bot that, similarly to some bots that exist for American audiences, allows you to select an issue and contact your local representative in the house of commons, informing them of your opinion on the given topic. It would ask you for your home address, and would find your representative using that, and send them an email.
 

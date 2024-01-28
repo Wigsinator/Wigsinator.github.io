@@ -1,0 +1,27 @@
+<head>
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/stylesheet.css">
+    {%- if layout.style -%}
+        {%- for stylesheet in layout.style %}
+            <link rel="stylesheet" href="{{'/assets/css/'| append: stylesheet | append: '.css' | relative_url}}">
+        {%- endfor -%} 
+    {%- endif -%}
+    {%- if page.style -%}
+        {%- for stylesheet in page.style %}
+            <link rel="stylesheet" href="{{'/assets/css/'| append: stylesheet | append: '.css' | relative_url}}">
+        {%- endfor -%} 
+    {%- endif -%}
+    <script src="https://kit.fontawesome.com/e2c2ef9ffc.js" crossorigin="anonymous"></script>
+    {%- if layout.custom_js -%}
+        {%- for js_file in layout.custom_js %}
+        <script type="text/javascript" src="{{'/assets/js/' | append: js_file | append: '.js' | relative_url}}"></script>
+        {%- endfor -%}
+    {%- endif -%}
+    {%- if page.custom_js -%}
+        {%- for js_file in page.custom_js %}
+        <script type="text/javascript" src="{{'/assets/js/' | append: js_file | append: '.js' | relative_url}}"></script>
+        {%- endfor -%}
+    {%- endif -%}
+</head>

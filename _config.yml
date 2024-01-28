@@ -1,5 +1,9 @@
 permalink: pretty
 excerpt_separator: <!--more-->
+skin: gruvbox-material-light
+
+include:
+  - _pages
 
 defaults:
   -
@@ -9,35 +13,31 @@ defaults:
     values:
       layout: "default"
 
-  -
+  - 
     scope:
-      path: "en"
-      type: "pages"
+      path: "_pages"
     values:
-      lang: "en"
-  -
-    scope:
-      path: "fr"
-      type: "pages"
-    values:
-      lang: "fr"
+      permalink: "/:basename:output_ext"
+
   -
     scope:
       path: ""
       type: "posts" 
     values:
       layout: "post"
-      lang: "en"
+
   - 
     scope:
       path: ""
       type: "projects"
     values:
       layout: "project"
-      lang: "en"
 
 collections:
   projects:
     output: true
     order:
       - pocket_chef.md
+
+social_links:
+ - { platform: github, user_url: "https://github.com/wigsinator" }

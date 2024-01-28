@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+// Gruvbox Material skin
+// ==============
+// Created by William Hirsch <mailto:williamhirsch@williamhirsch.ca> using the 
+// Gruvbox Material color scheme by sainnhe <https://github.com/sainnhe/gruvbox-material/tree/master>.
+
+// This style sheet implements three options for the site.skin setting:
+// "gruv-light" for light mode, "gruv-dark" for dark mode, and
+// "gruv" for light or dark mode depending on user preference.
+$gruv-is-auto: true !default;
+$gruv-is-dark: false !default;
+
+
+// Light mode
+// ----------
+
+$lm-bg-dim:   #f2e5bc;
+$lm-bg0:      #fbf1c7;
+$lm-bg1:      #f4e8be;
+$lm-bg2:      #f2e5bc;
+$lm-bg3:      #eee0b7;
+$lm-bg4:      #e5d5ad;
+$lm-bg5:      #ddccab;
+$lm-stat1:    #f2e5bc;
+$lm-stat2:    #f2e5bc;
+$lm-stat3:    #e5d5ad;
+$lm-diff-g:   #e6eabc;
+$lm-vis-g:    #dee2b6;
+$lm-diff-r:   #f9e0bb;
+$lm-vis-r:    #f1d9b5;
+$lm-diff-b:   #e2e6c7;
+$lm-vis-b:    #dadec0;
+$lm-vis-y:    #fae7b3;
+$lm-bg-cw:    #f2e5bc;
+$lm-fg0:      #654735;
+$lm-fg1:      #4f3829;
+$lm-red:      #c14a4a;
+$lm-orange:   #c35e0a;
+$lm-yellow:   #b47109;
+$lm-green:    #6c782e;
+$lm-aqua:     #4c7a5d;
+$lm-blue:     #45707a;
+$lm-purple:   #945e80;
+$lm-bgr:      #ae5858;
+$lm-bgg:      #6f8352;
+$lm-bgy:      #a96b2c;
+$lm-grey0:    #a89984;
+$lm-grey1:    #928374;
+$lm-grey2:    #7c6f64;
+
+// @mixin lm-highlight {
+//   .highlight {
+//     .c     { color: $lm-grey1; font-style: italic } // Comment
+//     .err   { color: $lm-red; background-color: $lm-bgr } // Error
+//     .k     { color: $lm-red; font-weight: bold } // Keyword
+//     .o     { color: $lm-orange; font-weight: bold } // Operator
+//     .cm    { color: $lm-grey1; font-style: italic } // Comment.Multiline
+//     .cp    { color: $lm-grey1; font-weight: bold } // Comment.Preproc
+//     .c1    { color: $lm-grey1; font-style: italic } // Comment.Single
+//     .cs    { color: $lm-grey1; font-weight: bold; font-style: italic } // Comment.Special
+//     .gd    { background-color: $lm-diff-r } // Generic.Deleted
+//     .gd .x { background-color: $lm-diff-r } // Generic.Deleted.Specific
+//     .ge    { font-style: italic } // Generic.Emph
+//     .gr    { color: $lm-red } // Generic.Error
+//     .gh    { color: $lm-grey1 } // Generic.Heading
+//     .gi    { background-color: $lm-diff-g } // Generic.Inserted
+//     .gi .x { background-color: $lm-diff-g  } // Generic.Inserted.Specific
+//     .go    { color: #888 } // Generic.Output
+//     .gp    { color: #555 } // Generic.Prompt
+//     .gs    { font-weight: bold } // Generic.Strong
+//     .gu    { color: #aaa } // Generic.Subheading
+//     .gt    { color: #a00 } // Generic.Traceback
+//     .kc    { font-weight: bold } // Keyword.Constant
+//     .kd    { font-weight: bold } // Keyword.Declaration
+//     .kp    { font-weight: bold } // Keyword.Pseudo
+//     .kr    { font-weight: bold } // Keyword.Reserved
+//     .kt    { color: #458; font-weight: bold } // Keyword.Type
+//     .m     { color: #099 } // Literal.Number
+//     .s     { color: #d14 } // Literal.String
+//     .na    { color: #008080 } // Name.Attribute
+//     .nb    { color: #0086B3 } // Name.Builtin
+//     .nc    { color: #458; font-weight: bold } // Name.Class
+//     .no    { color: #008080 } // Name.Constant
+//     .ni    { color: #800080 } // Name.Entity
+//     .ne    { color: #900; font-weight: bold } // Name.Exception
+//     .nf    { color: #900; font-weight: bold } // Name.Function
+//     .nn    { color: #555 } // Name.Namespace
+//     .nt    { color: #000080 } // Name.Tag
+//     .nv    { color: #008080 } // Name.Variable
+//     .ow    { font-weight: bold } // Operator.Word
+//     .w     { color: #bbb } // Text.Whitespace
+//     .mf    { color: #099 } // Literal.Number.Float
+//     .mh    { color: #099 } // Literal.Number.Hex
+//     .mi    { color: #099 } // Literal.Number.Integer
+//     .mo    { color: #099 } // Literal.Number.Oct
+//     .sb    { color: #d14 } // Literal.String.Backtick
+//     .sc    { color: #d14 } // Literal.String.Char
+//     .sd    { color: #d14 } // Literal.String.Doc
+//     .s2    { color: #d14 } // Literal.String.Double
+//     .se    { color: #d14 } // Literal.String.Escape
+//     .sh    { color: #d14 } // Literal.String.Heredoc
+//     .si    { color: #d14 } // Literal.String.Interpol
+//     .sx    { color: #d14 } // Literal.String.Other
+//     .sr    { color: #009926 } // Literal.String.Regex
+//     .s1    { color: #d14 } // Literal.String.Single
+//     .ss    { color: #990073 } // Literal.String.Symbol
+//     .bp    { color: #999 } // Name.Builtin.Pseudo
+//     .vc    { color: #008080 } // Name.Variable.Class
+//     .vg    { color: #008080 } // Name.Variable.Global
+//     .vi    { color: #008080 } // Name.Variable.Instance
+//     .il    { color: #099 } // Literal.Number.Integer.Long
+//   }
+// }
+
+
+// Dark Mode
+// ---------
+
+$dm-bg-dim:   #1b1b1b;
+$dm-bg0:      #282828;
+$dm-bg1:      #32302f;
+$dm-bg2:      #32302f;
+$dm-bg3:      #45403d;
+$dm-bg4:      #45403d;
+$dm-bg5:      #5a524c;
+$dm-stat1:    #32302f;
+$dm-stat2:    #3a3735;
+$dm-stat3:    #504945;
+$dm-diff-g:   #34381b;
+$dm-vis-g:    #3b4439;
+$dm-diff-r:   #402120;
+$dm-vis-r:    #3c3432;
+$dm-diff-b:   #0e363e;
+$dm-vis-b:    #374141;
+$dm-vis-y:    #4f422e;
+$dm-bg-cw:    #3c3836;
+$dm-fg0:      #d4be98;
+$dm-fg1:      #ddc7a1;
+$dm-red:      #ea6962;
+$dm-orange:   #e78a4e;
+$dm-yellow:   #d8a657;
+$dm-green:    #a9b665;
+$dm-aqua:     #89b482;
+$dm-blue:     #7daea3;
+$dm-purple:   #d3869b;
+$dm-bgr:      #ea6962;
+$dm-bgg:      #a9b665;
+$dm-bgy:      #d8a657;
+$dm-grey0:    #7c6f64;
+$dm-grey1:    #928374;
+$dm-grey2:    #a89984;
+
+// Mode selection
+// --------------
+
+$gruv-bg0:    $lm-bg0;
+$gruv-bg2:    $lm-bg2;
+$gruv-bg4:    $lm-bg4;
+$gruv-bg5:    $lm-bg5;
+
+$gruv-fg0:    $lm-fg0;
+$gruv-fg1:    $lm-fg1;
+
+$gruv-grey0:  $lm-grey0;
+$gruv-grey1:  $lm-grey1;
+$gruv-grey2:  $lm-grey2;
+
+$gruv-red:    $lm-red;
+$gruv-orange: $lm-orange;
+$gruv-yellow: $lm-yellow;
+$gruv-green:  $lm-green;
+$gruv-aqua:   $lm-aqua;
+$gruv-blue:   $lm-blue;
+$gruv-purple: $lm-purple;
+
+@if $gruv-is-dark {
+  $gruv-bg0:    $dm-bg0;
+  $gruv-bg2:    $dm-bg2;
+  $gruv-bg4:    $dm-bg4;
+  $gruv-bg5:    $dm-bg5;
+
+  $gruv-fg0:    $dm-fg0;
+  $gruv-fg1:    $dm-fg1;
+
+  $gruv-grey0:  $dm-grey0;
+  $gruv-grey1:  $dm-grey1;
+  $gruv-grey2:  $dm-grey2;
+
+  $gruv-red:    $dm-red;
+  $gruv-orange: $dm-orange;
+  $gruv-yellow: $dm-yellow;
+  $gruv-green:  $dm-green;
+  $gruv-aqua:   $dm-aqua;
+  $gruv-blue:   $dm-blue;
+  $gruv-purple: $dm-purple;
+}
+
+@if $gruv-is-auto {
+  :root {
+    --gruv-bg0:    #{$lm-bg0};
+    --gruv-bg2:    #{$lm-bg2};
+    --gruv-bg4:    #{$lm-bg4};
+    --gruv-bg5:    #{$lm-bg5};
+
+    --gruv-fg0:    #{$lm-fg0};
+    --gruv-fg1:    #{$lm-fg1};
+
+    --gruv-grey0:  #{$lm-grey0};
+    --gruv-grey1:  #{$lm-grey1};
+    --gruv-grey2:  #{$lm-grey2};
+
+    --gruv-red:    #{$lm-red};
+    --gruv-orange: #{$lm-orange};
+    --gruv-yellow: #{$lm-yellow};
+    --gruv-green:  #{$lm-green};
+    --gruv-aqua:   #{$lm-aqua};
+    --gruv-blue:   #{$lm-blue};
+    --gruv-purple: #{$lm-purple};
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --gruv-bg0:    #{$dm-bg0};
+      --gruv-bg2:    #{$dm-bg2};
+      --gruv-bg4:    #{$dm-bg4};
+      --gruv-bg5:    #{$dm-bg5};
+
+      --gruv-fg0:    #{$dm-fg0};
+      --gruv-fg1:    #{$dm-fg1};
+
+      --gruv-grey0:  #{$dm-grey0};
+      --gruv-grey1:  #{$dm-grey1};
+      --gruv-grey2:  #{$dm-grey2};
+
+      --gruv-red:    #{$dm-red};
+      --gruv-orange: #{$dm-orange};
+      --gruv-yellow: #{$dm-yellow};
+      --gruv-green:  #{$dm-green};
+      --gruv-aqua:   #{$dm-aqua};
+      --gruv-blue:   #{$dm-blue};
+      --gruv-purple: #{$dm-purple};
+    }
+  }
+
+  $gruv-bg0:    var(--gruv-bg0);
+  $gruv-bg2:    var(--gruv-bg2);
+  $gruv-bg4:    var(--gruv-bg4);
+  $gruv-bg5:    var(--gruv-bg5);
+
+  $gruv-fg0:    var(--gruv-fg0);
+  $gruv-fg1:    var(--gruv-fg1);
+
+  $gruv-grey0:  var(--gruv-grey0);
+  $gruv-grey1:  var(--gruv-grey1);
+  $gruv-grey2:  var(--gruv-grey2);
+
+  $gruv-red:    var(--gruv-red);
+  $gruv-orange: var(--gruv-orange);
+  $gruv-yellow: var(--gruv-yellow);
+  $gruv-green:  var(--gruv-green);
+  $gruv-aqua:   var(--gruv-aqua);
+  $gruv-blue:   var(--gruv-blue);
+  $gruv-purple: var(--gruv-purple);
+}
+
+
+// Minima color variables
+// ----------------------
+
+$brand-color:           $gruv-green !default;
+$brand-color-light:     $gruv-aqua !default;
+$brand-color-dark:      $gruv-fg1 !default;
+
+$site-title-color:      $gruv-fg1 !default;
+
+$text-color:            $gruv-fg0 !default;
+$background-color:      $gruv-bg0 !default;
+$code-background-color: $gruv-grey0 !default;
+
+$link-base-color:       $gruv-blue !default;
+$link-visited-color:    $gruv-purple !default;
+$link-hover-color:      $gruv-blue !default;
+
+$border-color-01:       $gruv-grey2 !default;
+$border-color-02:       $gruv-green !default;
+$border-color-03:       $gruv-fg1 !default;
+
+$table-text-color:      $gruv-fg1 !default;
+$table-zebra-color:     $gruv-bg5 !default;
+$table-header-bg-color: $gruv-bg2 !default;
+$table-header-border:   $gruv-bg4 !default;
+$table-border-color:    $gruv-bg4 !default;
+
+//dark -> light
+// 03 02 01 00 0 1 2 3

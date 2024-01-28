@@ -1,30 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{page.lang | default: site.lang | default: "en" }}">
 
-<head>
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-</head>
+    {%- include head.html -%}
 
 <body>
-    <script type="text/javascript">
-        var _userway_config = {
-            account: 'jBOS5KrR6B'
-        };
-    </script>
-    <script type="text/javascript" src="https://cdn.userway.org/widget.js"></script>
-    <header>
-        <h1>William Hirsch</h1>
-        {% if page.lang == 'en' %}
-            {% include navigation_en.html %}
-        {% elsif page.lang == 'fr' %}
-            {% include navigation_fr.html %}
-        {% endif %}
-    </header>
+    {%- include header.html -%}
 
-    <content>
-        {{ content }}
-    </content>
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            {{ content }}
+        </div>
+    </main>
+    <!-- {%- include footer.html -%} -->
 </body>
 </html>
