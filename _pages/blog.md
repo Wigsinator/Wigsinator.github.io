@@ -3,6 +3,8 @@ title: Blog
 ---
 ## General Blog Posts
 
+I've decided that I want to start using this site more, so I'm gonna be maintaining this blog. I hope that having long-form writings on various topics will help me practice both critical thinking and help reverse the irony poisoning that comes from being terminally online. The goal is to post something every Saturday, and the topic will really be whatever I want it to be that week. 
+
 {% for post in site.posts -%}
 	{%- if post.category != "csc290" %}
 - [{{ post.title }} - {{ post.date | date_to_string }}]({{ post.url }})
