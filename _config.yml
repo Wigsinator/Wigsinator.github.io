@@ -40,4 +40,6 @@ collections:
       - pocket_chef.md
 
 social_links:
- - { platform: github, user_url: "https://github.com/wigsinator" }
+ - { platform: email,   user_url: "mailto:williamhirsch@williamhirsch.ca"}
+ - { platform: github,  user_url: "https://github.com/wigsinator" }
+#  - { platform: rss,     user_url: "https://williamhirsch.ca/feed.xml" }
