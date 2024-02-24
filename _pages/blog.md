@@ -4,7 +4,7 @@ title: Blog
 ## General Blog Posts
 
 {% for post in site.posts -%}
-	{%- if post.category != "csc290" -%}
+	{%- if post.category != "csc290" %}
 - [{{ post.title }} - {{ post.date | date_to_string }}]({{ post.url }})
 	{%- endif -%}
 {% endfor %}
