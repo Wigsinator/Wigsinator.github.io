@@ -1,9 +1,19 @@
 permalink: pretty
 excerpt_separator: <!--more-->
 skin: gruvbox-material-light
+timezone: Canada/Eastern
 
 include:
   - _pages
+
+plugins:
+  - jekyll-feed
+
+# For Jekyll Feed Purposes
+title: William Hirsch's blog
+description: Assorted longform thoughts to get me back in the habit of enjoying things and thinking critically. 
+url: williamhirsch.ca
+author: William Hirsch
 
 defaults:
   -
@@ -42,4 +52,4 @@ collections:
 social_links:
  - { platform: email,   user_url: "mailto:williamhirsch@williamhirsch.ca"}
  - { platform: github,  user_url: "https://github.com/wigsinator" }
-#  - { platform: rss,     user_url: "https://williamhirsch.ca/feed.xml" }
+ - { platform: rss,     user_url: "/feed.xml" }
