@@ -1,5 +1,6 @@
 ---
 title: This Blog Post is in the Library of Babel
+date: 2024-02-24 14:56
 ---
 [Read the post here](https://libraryofbabel.app/ref/007fdc7a-7837-402a-ae54-b280ea4e313e.4.5.4.1)
 

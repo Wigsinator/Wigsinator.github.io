@@ -1,6 +1,7 @@
 ---
 title: Nothing in the Gutter
 subtitle: An Aphantasic Critique of McCloud’s Understanding Comics
+date: 2024-02-17 13:55
 ---
 _This is an essay I wrote in university for ENG235H5: Comics and the Graphic Novel. I am quite proud of this essay, and thus decided to post it here. It was originally written on April 6th, 2023._
 
