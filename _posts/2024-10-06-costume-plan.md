@@ -10,7 +10,7 @@ I want to make a costume of Senshi from Dungeon Meshi. This dwarven adventurer i
 
 ![Senshi](/assets/posts/oct-costume/Senshi_Full_Body.png)
 Now, this is his design for when he's in the upper levels of the dungeon. There are points in the story where they go to deeper, and colder places, and given that it's gonna be cold in End of October, I'm likely gonna wanna use the version that's a little more covered up. The other issue is that his beard covers up basically his entire upper half, so figuring out his shirt situation would be kind of a nightmare. Luckily for me, both of those birds are solved by the same stone: The Changeling circle episode.
-![[Dwarf_Laios.png]]
+![Dwarf Laios](Dwarf_Laios.png)
 In this episode, the party all step into a ring of changeling mushrooms, causing them to swap around which mythical species they are. Laios ends up becoming a dwarf, and thus borrows Senshi's wintertime gear, without having a beard to cover it up. So Laios gives me an extremely clean look as to what the upper half looks like.
 
 ## The Priorities and the Pain Points
